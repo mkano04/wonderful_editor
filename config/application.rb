@@ -33,8 +33,20 @@ module WonderfulEditor
     config.generators.system_tests = nil
 
     config.generators do |g|
-      g.test_framework :rspec
+      g.template_engine false
+      g.javascripts false
+      g.stylesheets false
+      g.helper false
+      g.test_framework :rspec,
+                       view_specs: false,
+                       routing_specs: false,
+                       helper_specs: false,
+                       contoroller_specs: false,
+                       request_specs: true
+
     end
+
+    config.api_only = ture
 
   end
 end
