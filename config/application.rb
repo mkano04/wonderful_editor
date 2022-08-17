@@ -43,10 +43,8 @@ module WonderfulEditor
                        helper_specs: false,
                        contoroller_specs: false,
                        request_specs: true
-
     end
 
-    config.api_only = ture
-
+    config.api_only = true
   end
 end
