@@ -12,7 +12,7 @@
 # Indexes
 #
 #  index_articles_on_user_id  (user_id)
-#ar
+# ar
 # Foreign Keys
 #
 #  fk_rails_...  (user_id => users.id)
