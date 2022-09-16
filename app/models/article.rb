@@ -18,7 +18,6 @@
 #  fk_rails_...  (user_id => users.id)
 #
 class Article < ApplicationRecord
-
   validates :title, presence: true
   validates :body, presence: true
 
