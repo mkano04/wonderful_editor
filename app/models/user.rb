@@ -39,6 +39,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   include DeviseTokenAuth::Concerns::User
 
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
+  validates :uid, presence: true
+
   has_many :articles, dependent: :destroy
   has_many :article_likes, dependent: :destroy
   has_many :comments, dependent: :destroy
